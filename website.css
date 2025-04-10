@@ -25,9 +25,9 @@ header{
   display: flex;
   margin-left: auto ;
   gap: 12px;
-  margin-right: 8px;
+  margin-right: 12px;
   align-items: center;
-  padding-top: 15px;
+  
 }
 
 li{
