@@ -1,13 +1,64 @@
-button {
-    font-family: "helvetica neue", helvetica, sans-serif;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    border: 2px solid rgb(200 200 0 / 60%);
-    background-color: rgb(0 217 217 / 60%);
-    color: rgb(100 0 0 / 100%);
-    box-shadow: 1px 1px 2px rgb(0 0 200 / 40%);
-    border-radius: 10px;
-    padding: 3px 10px;
-    cursor: pointer;
-    
-  }
+body {
+  width: 100%;
+  margin: auto;
+  
+
+}
+h1{
+  color: white; 
+  margin-left: 10px;
+}
+header{
+  width: 100%;
+  display: flex;
+  border: 1px solid black;
+  align-items: center;
+  padding-left: 2px;
+  margin-right: 40px;
+  background-color: black;  
+  height: 55px;
+  min-height: 30px;
+}
+
+.nav{
+  list-style-type: none;
+  display: flex;
+  margin-left: auto ;
+  gap: 12px;
+  margin-right: 8px;
+  align-items: center;
+  padding-top: 15px;
+}
+
+li{
+  margin: 10px;
+  align-content: center;
+  font-weight: 100;
+}
+
+
+a:link{
+  color: rebeccapurple;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+  transform-origin: center;
+  display: inline-block;
+  /*a tags don’t always expand well unless you give them more space
+   or make them inline-block*/
+}
+/*By default, a elements are inline — which means:
+They only take up as much width as their content.
+Transform effects like scale() don’t work visually as expected 
+unless they are block-level or inline-block.*/
+a:active , a:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+  color: #00ccff;
+  
+}
+
+
+h1:hover{
+  color: rebeccapurple; 
+  transition: transform 0.3s ease;
+}
